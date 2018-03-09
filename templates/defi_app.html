@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ 	<head>
+		<meta charset="utf-8">
+		<title>login page</title>
+		<link type="text/css" rel="stylesheet" href="/static/defi_app.css">
+	</head>
+	<body>
+		<div class="title"><h1>Definition Hunter</h1></div>
+		<div class="container">
+			<div class="left">
+				<p >{{ get }} <a href="{{ link }}"> Know more about {{ sw }} </a></p><br>
+				
+			</div>
+			<div class="right">
+				<div class="form">
+					<form method="POST" action="/new">
+						<p> word</p>
+						<input type="text" name="word" placeholder="Enter word here"><br>
+						<input class="btn btn-primary" type="submit" value="search">
+					</form>
+				</div>
+		</div>
+	</body>
+</html>
